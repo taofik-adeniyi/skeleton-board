@@ -1,5 +1,6 @@
 const Config = {
-    defaultPath: '/dashboard/default',
+    defaultPath: '/auth/login',
+    // defaultPath: '/dashboard/default',
     basename: '/able-pro/react/default',
     layout: 'vertical',
     subLayout: '',

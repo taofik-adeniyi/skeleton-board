@@ -21,17 +21,22 @@ const App = () => {
             return route.component ? (<Route key={index} path={route.path} exact={route.exact} render={(props) => <route.component {...props}/>}/>) : null;
         })}
                         </Switch>
-                    </Route>
+                    </Route> */}
                     <Route path={routes.map((x) => x.path)}>
                         <AdminLayout />
                     </Route>
                     <Route path={'/'} exact>
-                        <Redirect to={Config.defaultPath} to="/auth/signin-1" />
-                    </Route> */}
-                    <Switch>
+                        <Redirect to={Config.defaultPath} />
+                    </Route>
+                    <Route exact path="/auth/login" component={LoginIn} />
+                    {/* <Route exact path="/" component={LoginIn} /> */}
+                    {/* <Switch>
                         <Route exact path="/" component={LoginIn} />
                         <Route exact path="/admin/dashboard" component={AdminLayout} />
-                    </Switch>
+                        <Route exact path="/admin/service-one" component={AdminLayout} />
+                        <Route exact path="/admin/service-two" component={AdminLayout} />
+                        <Route exact path="/admin/service-three" component={AdminLayout} />
+                    </Switch> */}
                 </Suspense>
             </ScrollToTop>
             <div className="backdrop"/>

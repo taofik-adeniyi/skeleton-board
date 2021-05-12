@@ -80,6 +80,7 @@ const NavContent = (props) => {
                     <ul id="sidenav-horizontal" className="nav pcoded-inner-navbar sidenav-inner" onMouseLeave={onNavContentLeave} style={scrollStyle}>
                         {navItems}
                     </ul>
+                    okay
                 </div>
                 <a href={DEMO.BLANK_LINK} className={nextClass.join(' ')} onClick={scrollNextHandler}>
                     <span />
@@ -91,7 +92,7 @@ const NavContent = (props) => {
                 <PerfectScrollbar options={{ wheelSpeed: 2, swipeEasing: true }}>
                     <ul className="nav pcoded-inner-navbar" id="nav-ps-next">
                         {navItems}
-                        {/* <li>
+                        <li>
                             <Card className="text-center">
                                 <Card.Body>
                                     <i className="feather icon-sunset f-40"/>
@@ -102,7 +103,7 @@ const NavContent = (props) => {
                                     </a>
                                 </Card.Body>
                             </Card>
-                        </li> */}
+                        </li>
                     </ul>
                 </PerfectScrollbar>
             </div>);

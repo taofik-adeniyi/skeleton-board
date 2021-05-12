@@ -46,14 +46,14 @@ const AdminLayout = () => {
                                 <div className="page-wrapper">
                                     <h1>Admin Layout</h1>
                                     <p>Test</p>
-                                    {/* <Suspense fallback={<Loader />}>
+                                    <Suspense fallback={<Loader />}>
                                         <Switch>
                                             {routes.map((route, index) => {
             return route.component ? (<Route key={index} path={route.path} exact={route.exact} render={(props) => <route.component {...props}/>}/>) : null;
         })}
                                             <Redirect from="/" to={defaultPath}/>
                                         </Switch>
-                                    </Suspense> */}
+                                    </Suspense>
                                 </div>
                             </div>
                         </div>
