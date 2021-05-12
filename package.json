@@ -45,6 +45,7 @@
         "jodit-react": "^1.0.74",
         "jszip": "^3.6.0",
         "nib-core": "^2.7.16",
+        "node-sass": "^6.0.0",
         "pdfmake": "^0.1.70",
         "peity-react": "0.0.7",
         "pnotify": "^4.0.1",
