@@ -158,7 +158,7 @@ const chartData = {
                     title: 'New',
                     type: 'badge-warning'
                 },
-                url: '/users/user-profile',
+                url: '/dashboard/home',
                 },
                 {
                     id: 'games-page',
@@ -188,7 +188,7 @@ const chartData = {
                     id: 'reports-page',
                     title: 'Reports Listing',
                     type: 'item',
-                    url: '/report-listings',
+                    url: '/report/listings',
                     classes: 'nav-item',
                     icon: 'feather icon-sidebar'
                 },
@@ -208,34 +208,34 @@ const chartData = {
                     classes: 'nav-item',
                     icon: 'feather icon-sidebar'
                 },
-                {
-                    id: 'dashboard',
-                    title: 'Dashboard',
-                    type: 'collapse',
-                    icon: 'feather icon-home',
-                    badge: {
-                        title: 'New',
-                        type: 'badge-warning'
-                    },
-                    children: [
-                        {
-                            id: 'default',
-                            title: 'Default',
-                            type: 'item',
-                            url: '/dashboard/default'
-                        },
-                        {
-                            id: 'sales',
-                            title: 'Sales',
-                            type: 'item',
-                            url: '/dashboard/sales',
-                            badge: {
-                                title: 'NEW',
-                                type: 'badge-danger'
-                            }
-                        }
-                    ]
-                },
+                // {
+                //     id: 'dashboard',
+                //     title: 'Dashboard',
+                //     type: 'collapse',
+                //     icon: 'feather icon-home',
+                //     badge: {
+                //         title: 'New',
+                //         type: 'badge-warning'
+                //     },
+                //     children: [
+                //         {
+                //             id: 'default',
+                //             title: 'Default',
+                //             type: 'item',
+                //             url: '/dashboard/default'
+                //         },
+                //         {
+                //             id: 'sales',
+                //             title: 'Sales',
+                //             type: 'item',
+                //             url: '/dashboard/sales',
+                //             badge: {
+                //                 title: 'NEW',
+                //                 type: 'badge-danger'
+                //             }
+                //         }
+                //     ]
+                // },
             ]
         },
         {

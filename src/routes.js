@@ -7,7 +7,14 @@ const Signin1 = React.lazy(() => import('./Demo/Authentication/SignIn/SignIn1'))
 const Signin2 = React.lazy(() => import('./Demo/Authentication/SignIn/SignIn2'));
 const routes = [
     { path: '/sample-page', exact: true, name: 'Sample Page', component: OtherSamplePage },
+    { path: '/dashboard/home', exact: true, name: 'Analytics', component: DashboardDefault },
     { path: '/dashboard/default', exact: true, name: 'Analytics', component: DashboardDefault },
+    { path: '/game-settings', exact: true, name: 'Analytics', component: DashboardDefault },
+    { path: '/account-settings', exact: true, name: 'Analytics', component: DashboardDefault },
+    { path: '/payments', exact: true, name: 'Analytics', component: DashboardDefault },
+    { path: '/report/listings', exact: true, name: 'Analytics', component: DashboardDefault },
+    { path: '/supplies', exact: true, name: 'Analytics', component: DashboardDefault },
+    { path: '/messages', exact: true, name: 'Analytics', component: DashboardDefault },
     { path: '/auth/signup-1', exact: true, name: 'Signup 1', component: SignUp1 },
     { path: '/auth/signup-2', exact: true, name: 'Signup 2', component: SignUp2 },
     { path: '/auth/signin-1', exact: true, name: 'Signin 1', component: Signin1 },

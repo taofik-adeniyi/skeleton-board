@@ -26,7 +26,8 @@ const SignUp1 = () => {
                                         <Form.Check custom type="checkbox" id="supported-checkbox" label={'Save credentials'}/>
                                     </Form.Group>
 
-                                    <NavLink to="/sample-page" className="btn btn-block btn-primary mb-4">Signin</NavLink>
+                                    <NavLink to="/dashboard/home" className="btn btn-block btn-primary mb-4">Signin</NavLink>
+                                    {/* <NavLink to="/sample-page" className="btn btn-block btn-primary mb-4">Signin</NavLink> */}
                                     {/* <p className="mb-2 text-muted">
                                         Forgot password?{' '}
                                         <NavLink to="/auth/reset-password-1" className="f-w-400">

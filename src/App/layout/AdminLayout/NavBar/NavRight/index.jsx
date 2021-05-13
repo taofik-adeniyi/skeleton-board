@@ -9,9 +9,9 @@ const NavRight = (props) => {
             <ul className="navbar-nav ml-auto">
                 <li>
                     <Dropdown drop={!props.rtlLayout ? 'left' : 'right'} className="dropdown" alignRight={!props.rtlLayout}>
-                        <Dropdown.Toggle variant={'link'} id="dropdown-basic">
+                        {/* <Dropdown.Toggle variant={'link'} id="dropdown-basic">
                             <i className="feather icon-bell icon"/>
-                        </Dropdown.Toggle>
+                        </Dropdown.Toggle> */}
                         <Dropdown.Menu alignRight className="notification">
                             <div className="noti-head bg-dark">
                                 <h6 className="d-inline-block m-b-0">Notifications</h6>
@@ -107,8 +107,10 @@ const NavRight = (props) => {
                         <Dropdown.Menu alignRight className="profile-notification">
                             <div className="pro-head bg-dark">
                                 <img src={Avatar1} className="img-radius" alt="User Profile"/>
-                                <span>John Doe</span>
-                                <a href={DEMO.BLANK_LINK} className="dud-logout" title="Logout">
+                                {/* <span>John Doe</span> */}
+                                <span>TJ Mesh</span>
+                                {/* <a href={DEMO.BLANK_LINK} className="dud-logout" title="Logout"> */}
+                                <a href="auth/login" className="dud-logout" title="Logout">
                                     <i className="feather icon-log-out"/>
                                 </a>
                             </div>
@@ -129,8 +131,10 @@ const NavRight = (props) => {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href={DEMO.BLANK_LINK} className="dropdown-item">
-                                        <i className="feather icon-lock"/> Lock Screen
+                                    {/* <a href={DEMO.BLANK_LINK} className="dropdown-item"> */}
+                                    <a href="/auth/login" className="dropdown-item">
+                                        {/* <i className="feather icon-lock"/> Lock Screen */}
+                                        <i className="feather icon-lock"/> Log Out
                                     </a>
                                 </li>
                             </ul>

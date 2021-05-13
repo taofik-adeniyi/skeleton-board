@@ -60,7 +60,7 @@ const AdminLayout = () => {
                     </div>
                 </div>
             </div>
-            <Configuration />
+            {/* <Configuration /> */}
         </>);
 };
 export default AdminLayout;

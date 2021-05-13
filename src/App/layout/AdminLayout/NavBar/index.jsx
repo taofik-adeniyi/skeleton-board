@@ -64,6 +64,9 @@ const NavBar = () => {
                 </a>
                 <a href={DEMO.BLANK_LINK} className="b-brand">
                     <img id="main-logo" src={mainLogo} alt="" className="logo"/>
+                    {/* url(https://avatars.slack-edge.com/2021-04-24/1983067679415_5957306305873c312414_102.png) */}
+                    {/* <img id="main-logo" src={"https://avatars.slack-edge.com/2021-04-24/1983067679415_5957306305873c312414_102.png"} alt="" style={{margin: '30px 0'}} className="logo" /> */}
+                    {/* url(https://avatars.slack-edge.com/2021-04-24/1983067679415_5957306305873c312414_102.png) */}
                 </a>
                 <a className="mob-toggler" href={DEMO.BLANK_LINK} onClick={() => setRightToggle(!rightToggle)}>
                     <i className="feather icon-more-vertical"/>
