@@ -44,8 +44,6 @@ const AdminLayout = () => {
                             <Breadcrumb />
                             <div className="main-body">
                                 <div className="page-wrapper">
-                                    <h1>Admin Layout</h1>
-                                    <p>Test</p>
                                     <Suspense fallback={<Loader />}>
                                         <Switch>
                                             {routes.map((route, index) => {

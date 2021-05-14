@@ -361,13 +361,13 @@ const chartData = {
                             id: 'default',
                             title: 'Place Order',
                             type: 'item',
-                            url: '/dashboard/default'
+                            url: '/supplies/placed-order'
                         },
                         {
                             id: 'sales',
                             title: 'Receipt for paper rolls',
                             type: 'item',
-                            url: '/dashboard/default'
+                            url: '/supplies/receipt'
                         }
                     ]
                 },
@@ -383,13 +383,13 @@ const chartData = {
                             id: 'default',
                             title: 'Cashier',
                             type: 'item',
-                            url: '/dashboard/default'
+                            url: '/messaging/cashier'
                         },
                         {
                             id: 'sales',
                             title: 'Support',
                             type: 'item',
-                            url: '/dashboard/default'
+                            url: '/messaging/customer-support'
                         }
                     ]
                 },
