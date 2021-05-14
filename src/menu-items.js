@@ -150,63 +150,248 @@ const chartData = {
             type: 'group',
             icon: 'icon-navigation',
             children: [
-                { id: 'dash',
-                title: 'Home',
-                type: 'item',
-                icon: 'feather icon-users',
-                badge: {
-                    title: 'New',
-                    type: 'badge-warning'
-                },
-                url: '/dashboard/home',
+                { 
+                    id: 'dash',
+                    title: 'Dashboard',
+                    type: 'collapse',
+                    icon: 'feather icon-users',
+                    url: '/dashboard/home',
+                    children: [
+                        {
+                            id: 'default',
+                            title: 'Total Sales',
+                            type: 'item',
+                            url: '/dashboard/default'
+                        },
+                        {
+                            id: 'sales',
+                            title: 'Total Commision',
+                            type: 'item',
+                            url: '/dashboard/default'
+                        },
+                        {
+                            id: 'default',
+                            title: 'Total Debt',
+                            type: 'item',
+                            url: '/dashboard/default'
+                        },
+                        {
+                            id: 'default',
+                            title: 'Total Winnings',
+                            type: 'item',
+                            url: '/dashboard/default'
+                        },
+                        {
+                            id: 'default',
+                            title: 'Total Fines',
+                            type: 'item',
+                            url: '/dashboard/default'
+                        },
+                    ]
                 },
                 {
                     id: 'games-page',
-                    title: 'Games Settings',
-                    type: 'item',
+                    title: 'Games',
+                    type: 'collapse',
                     url: '/game-settings',
                     classes: 'nav-item',
-                    icon: 'feather icon-sidebar'
+                    icon: 'feather icon-sidebar',
+                    children: [
+                        {
+                            id: 'default',
+                            title: 'Lotto',
+                            type: 'item',
+                            url: '/dashboard/default'
+                        },
+                        {
+                            id: 'sales',
+                            title: 'Raffle',
+                            type: 'item',
+                            url: '/dashboard/default'
+                        },
+                        {
+                            id: 'default',
+                            title: 'Results',
+                            type: 'item',
+                            url: '/dashboard/default'
+                        },
+                        {
+                            id: 'default',
+                            title: 'Reports',
+                            type: 'item',
+                            url: '/dashboard/default'
+                        },
+                    ]
                 },
                 {
                     id: 'account-page',
-                    title: 'Account Page',
-                    type: 'item',
+                    title: 'Accounts',
+                    type: 'collapse',
                     url: '/account-settings',
                     classes: 'nav-item',
-                    icon: 'feather icon-sidebar'
+                    icon: 'feather icon-sidebar',
+                    children: [
+                        {
+                            id: 'default',
+                            title: 'Create Agent',
+                            type: 'item',
+                            url: '/dashboard/default'
+                        },
+                        {
+                            id: 'sales',
+                            title: 'Allocate Credit Limit',
+                            type: 'item',
+                            url: '/dashboard/default'
+                        },
+                        {
+                            id: 'default',
+                            title: 'Manage Agents',
+                            type: 'item',
+                            url: '/dashboard/default'
+                        },
+                        {
+                            id: 'default',
+                            title: 'Create POS',
+                            type: 'item',
+                            url: '/dashboard/default'
+                        },
+                        {
+                            id: 'default',
+                            title: 'View POS',
+                            type: 'item',
+                            url: '/dashboard/default'
+                        },
+                        {
+                            id: 'default',
+                            title: 'Remove POS',
+                            type: 'item',
+                            url: '/dashboard/default'
+                        },
+                        {
+                            id: 'default',
+                            title: 'Block POS',
+                            type: 'item',
+                            url: '/dashboard/default'
+                        },
+                        {
+                            id: 'default',
+                            title: 'Unblock POS',
+                            type: 'item',
+                            url: '/dashboard/default'
+                        }
+                    ]
                 },
                 {
                     id: 'payments-page',
                     title: 'Payments',
-                    type: 'item',
+                    type: 'collapse',
                     url: '/payments',
                     classes: 'nav-item',
-                    icon: 'feather icon-sidebar'
+                    icon: 'feather icon-sidebar',
+                    children: [
+                        {
+                            id: 'default',
+                            title: 'Credit POS',
+                            type: 'item',
+                            url: '/dashboard/default'
+                        },
+                        {
+                            id: 'sales',
+                            title: 'Increase Cashier Credit Limit',
+                            type: 'item',
+                            url: '/dashboard/default'
+                        },
+                        {
+                            id: 'default',
+                            title: 'Reduce Cashier Credit Limit',
+                            type: 'item',
+                            url: '/dashboard/default'
+                        }
+                    ]
                 },
                 {
                     id: 'reports-page',
-                    title: 'Reports Listing',
-                    type: 'item',
+                    title: 'Reports',
+                    type: 'collapse',
                     url: '/report/listings',
                     classes: 'nav-item',
-                    icon: 'feather icon-sidebar'
+                    icon: 'feather icon-sidebar',
+                    children: [
+                        {
+                            id: 'default',
+                            title: 'Winnings',
+                            type: 'item',
+                            url: '/dashboard/default'
+                        },
+                        {
+                            id: 'sales',
+                            title: 'Tickets',
+                            type: 'item',
+                            url: '/dashboard/default'
+                        },
+                        {
+                            id: 'default',
+                            title: 'Credits',
+                            type: 'item',
+                            url: '/dashboard/default'
+                        },
+                        {
+                            id: 'sales',
+                            title: 'Debts',
+                            type: 'item',
+                            url: '/dashboard/default'
+                        },
+                        {
+                            id: 'sales',
+                            title: 'Agents Performance',
+                            type: 'item',
+                            url: '/dashboard/default'
+                        }
+                    ]
                 },
                 {
                     id: 'supplies-page',
-                    title: 'Supplies Settings',
-                    type: 'item',
+                    title: 'Supplies',
+                    type: 'collapse',
                     url: '/supplies',
                     classes: 'nav-item',
-                    icon: 'feather icon-sidebar'
+                    icon: 'feather icon-sidebar',
+                    children: [
+                        {
+                            id: 'default',
+                            title: 'Place Order',
+                            type: 'item',
+                            url: '/dashboard/default'
+                        },
+                        {
+                            id: 'sales',
+                            title: 'Receipt for paper rolls',
+                            type: 'item',
+                            url: '/dashboard/default'
+                        }
+                    ]
                 },
                 {
                     id: 'messaging-page',
-                    title: 'Messages Settings',
-                    type: 'item',
+                    title: 'Messaging',
+                    type: 'collapse',
                     url: '/messages',
                     classes: 'nav-item',
-                    icon: 'feather icon-sidebar'
+                    icon: 'feather icon-sidebar',
+                    children: [
+                        {
+                            id: 'default',
+                            title: 'Cashier',
+                            type: 'item',
+                            url: '/dashboard/default'
+                        },
+                        {
+                            id: 'sales',
+                            title: 'Support',
+                            type: 'item',
+                            url: '/dashboard/default'
+                        }
+                    ]
                 },
                 // {
                 //     id: 'dashboard',
