@@ -14,9 +14,246 @@ import seoChart2 from './chart/default-seo-chart-2';
 import seoChart3 from './chart/default-seo-chart-3';
 import powerCard1 from './chart/default-power-card-1';
 import powerCard2 from './chart/default-power-card-2';
+import candlestickChart from './chart/candlestick-chart';
+import BarBasicChart from '../Other/BarBasicChart'
 const Default = () => {
     return (<>
-            <Row>
+    <Row>
+    <Col md={6} xl={4}>
+                    <Card>
+                        <Card.Body>
+                            <Row className="align-items-center">
+                                <Col>
+                                    <h3>$16,756</h3>
+                                    <h6 className="text-muted m-b-0">
+                                        Visits<i className="fa fa-caret-down text-c-red m-l-10"></i>
+                                    </h6>
+                                </Col>
+                                <Col>
+                                    <Chart {...seoChart1}/>
+                                </Col>
+                            </Row>
+                            <Row>
+                            <Col>
+                            <p className="mb-3 mt-3">Total number of support requests that come in.</p>
+                            </Col>
+                            </Row>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col md={6} xl={4}>
+                    <Card>
+                        <Card.Body>
+                            <Row className="align-items-center">
+                                <Col>
+                                    <h3>49.54%</h3>
+                                    <h6 className="text-muted m-b-0">
+                                        Bounce Rate<i className="fa fa-caret-up text-c-green m-l-10"></i>
+                                    </h6>
+                                </Col>
+                                <Col>
+                                    <Chart {...seoChart2}/>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col>
+                                <p className="m-t-15 m-b-15 text-muted">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                    has been the industry's standard.
+                                </p>
+                                </Col>
+                            </Row>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col md={12} xl={4}>
+                    <Card>
+                        <Card.Body>
+                            <Row className="align-items-center">
+                                <Col>
+                                    <h3>1,62,564</h3>
+                                    <h6 className="text-muted m-b-0">
+                                        Products<i className="fa fa-caret-down text-c-red m-l-10"></i>
+                                    </h6>
+                                </Col>
+                                <Col>
+                                    <Chart {...seoChart3}/>
+                                </Col>
+                            </Row>
+                            <Row>
+                            <Col>
+                            <p className="mb-3 mt-3">Total number of support,  requests that come in requests that come in.</p>
+                            </Col>
+                            </Row>
+                        </Card.Body>
+                    </Card>
+                </Col>
+    </Row>
+    <BarBasicChart />
+    <Row><Col><div style={{height: '30px'}}></div></Col></Row>
+    <Row>
+    <Col xl={8} md={12}>
+                    <Card className="table-card">
+                        <Card.Header>
+                            <h5>Projects</h5>
+                        </Card.Header>
+                        <Card.Body className="pb-0">
+                            <Table responsive hover className="mb-0">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <div className="chk-option">
+                                                <label className="check-task custom-control custom-checkbox d-flex justify-content-center done-task">
+                                                    <input type="checkbox" className="custom-control-input"/>
+                                                    <span className="custom-control-label"/>
+                                                </label>
+                                            </div>
+                                            Assigned
+                                        </th>
+                                        <th>Name</th>
+                                        <th>Due Date</th>
+                                        <th className="text-right">Priority</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div className="chk-option">
+                                                <label className="check-task custom-control custom-checkbox d-flex justify-content-center done-task">
+                                                    <input type="checkbox" className="custom-control-input"/>
+                                                    <span className="custom-control-label"/>
+                                                </label>
+                                            </div>
+                                            <div className="d-inline-block align-middle">
+                                                <img src={avatar4} alt="user" className="img-radius wid-40 align-top m-r-15"/>
+                                                <div className="d-inline-block">
+                                                    <h6>John Deo</h6>
+                                                    <p className="text-muted m-b-0">Graphics Designer</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>Able Pro</td>
+                                        <td>Jun, 26</td>
+                                        <td className="text-right">
+                                            <label className="badge badge-light-danger">Low</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div className="chk-option">
+                                                <label className="check-task custom-control custom-checkbox d-flex justify-content-center done-task">
+                                                    <input type="checkbox" className="custom-control-input"/>
+                                                    <span className="custom-control-label"/>
+                                                </label>
+                                            </div>
+                                            <div className="d-inline-block align-middle">
+                                                <img src={avatar2} alt="user" className="img-radius wid-40 align-top m-r-15"/>
+                                                <div className="d-inline-block">
+                                                    <h6>Jenifer Vintage</h6>
+                                                    <p className="text-muted m-b-0">Web Designer</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>Mashable</td>
+                                        <td>March, 31</td>
+                                        <td className="text-right">
+                                            <label className="badge badge-light-primary">high</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div className="chk-option">
+                                                <label className="check-task custom-control custom-checkbox d-flex justify-content-center done-task">
+                                                    <input type="checkbox" className="custom-control-input"/>
+                                                    <span className="custom-control-label"/>
+                                                </label>
+                                            </div>
+                                            <div className="d-inline-block align-middle">
+                                                <img src={avatar3} alt="user" className="img-radius wid-40 align-top m-r-15"/>
+                                                <div className="d-inline-block">
+                                                    <h6>William Jem</h6>
+                                                    <p className="text-muted m-b-0">Developer</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>Flatable</td>
+                                        <td>Aug, 02</td>
+                                        <td className="text-right">
+                                            <label className="badge badge-light-success">medium</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div className="chk-option">
+                                                <label className="check-task custom-control custom-checkbox d-flex justify-content-center done-task">
+                                                    <input type="checkbox" className="custom-control-input"/>
+                                                    <span className="custom-control-label"/>
+                                                </label>
+                                            </div>
+                                            <div className="d-inline-block align-middle">
+                                                <img src={avatar2} alt="user" className="img-radius wid-40 align-top m-r-15"/>
+                                                <div className="d-inline-block">
+                                                    <h6>David Jones</h6>
+                                                    <p className="text-muted m-b-0">Developer</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>Guruable</td>
+                                        <td>Sep, 22</td>
+                                        <td className="text-right">
+                                            <label className="badge badge-light-primary">high</label>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </Table>
+                        </Card.Body>
+                    </Card>
+                </Col>
+
+                <Col xl={4} md={12}>
+                <Card className="user-card2">
+                        <Card.Body className="text-center">
+                            <h6 className="m-b-15">Project Risk</h6>
+                            <div className="risk-rate">
+                                <span>
+                                    <b>5</b>
+                                </span>
+                            </div>
+                            <h6 className="m-b-10 m-t-10">Balanced</h6>
+                            <a href={DEMO.BLANK_LINK} className="text-c-green b-b-success">
+                                Change Your Risk
+                            </a>
+                            <div className="row justify-content-center m-t-10 b-t-default m-l-0 m-r-0">
+                                <div className="col m-t-15 b-r-default">
+                                    <h6 className="text-muted">Nr</h6>
+                                    <h6>AWS 2455</h6>
+                                </div>
+                                <div className="col m-t-15">
+                                    <h6 className="text-muted">Created</h6>
+                                    <h6>30th Sep</h6>
+                                </div>
+                            </div>
+                        </Card.Body>
+                        <button className="btn btn-success btn-block">Download Overall Report</button>
+                    </Card>
+                </Col>
+    </Row>
+    {/* <Row>
+    <Col sm={12}>
+                    <Card>
+                        <Card.Header>
+                            <Card.Title as="h5">Candlestick Chart</Card.Title>
+                        </Card.Header>
+                        <Card.Body>
+                            <Chart {...candlestickChart}/>
+                        </Card.Body>
+                    </Card>
+                </Col>
+    </Row> */}
+        
+    {/* <BarBasicChart /> */}
+
+            {/* <Row>
                 <Col xl={7} md={12}>
                     <Row>
                         <Col xs={12} sm={6}>
@@ -669,7 +906,7 @@ const Default = () => {
                         <button className="btn btn-success btn-block">Download Overall Report</button>
                     </Card>
                 </Col>
-            </Row>
+            </Row> */}
         </>);
 };
 export default Default;

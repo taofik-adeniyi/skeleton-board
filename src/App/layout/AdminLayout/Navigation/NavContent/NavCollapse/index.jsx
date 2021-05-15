@@ -68,7 +68,9 @@ const NavCollapse = (props) => {
         }
     }
     const subContent = (<>
-            <a href={DEMO.BLANK_LINK} className={navLinkClass.join(' ')} onClick={() => onCollapseToggle(props.collapse.id, props.type)}>
+            <a 
+            // href={DEMO.BLANK_LINK}
+             className={navLinkClass.join(' ')} onClick={() => onCollapseToggle(props.collapse.id, props.type)}>
                 <NavIcon items={props.collapse}/>
                 {itemTitle}
                 <NavBadge layout={layout} items={props.collapse}/>

@@ -153,47 +153,24 @@ const chartData = {
                 { 
                     id: 'dash',
                     title: 'Dashboard',
-                    type: 'collapse',
+                    type: 'item',
                     icon: 'feather icon-users',
                     url: '/dashboard/home',
-                    children: [
-                        {
-                            id: 'default',
-                            title: 'Total Sales',
-                            type: 'item',
-                            url: '/dashboard/default'
-                        },
-                        {
-                            id: 'sales',
-                            title: 'Total Commision',
-                            type: 'item',
-                            url: '/dashboard/default'
-                        },
-                        {
-                            id: 'default',
-                            title: 'Total Debt',
-                            type: 'item',
-                            url: '/dashboard/default'
-                        },
-                        {
-                            id: 'default',
-                            title: 'Total Winnings',
-                            type: 'item',
-                            url: '/dashboard/default'
-                        },
-                        {
-                            id: 'default',
-                            title: 'Total Fines',
-                            type: 'item',
-                            url: '/dashboard/default'
-                        },
-                    ]
+                    classes: 'nav-item',
+                    // children: [
+                    //     {
+                    //         id: 'default',
+                    //         title: 'Home',
+                    //         type: 'item',
+                    //         url: '/dashboard/home'
+                    //     }
+                    // ]
                 },
                 {
                     id: 'games-page',
                     title: 'Games',
                     type: 'collapse',
-                    url: '/game-settings',
+                    // url: '/game-settings',
                     classes: 'nav-item',
                     icon: 'feather icon-sidebar',
                     children: [
@@ -201,25 +178,25 @@ const chartData = {
                             id: 'default',
                             title: 'Lotto',
                             type: 'item',
-                            url: '/dashboard/default'
+                            url: '/games/lotto'
                         },
                         {
                             id: 'sales',
                             title: 'Raffle',
                             type: 'item',
-                            url: '/dashboard/default'
+                            url: '/games/raffle'
                         },
                         {
                             id: 'default',
                             title: 'Results',
                             type: 'item',
-                            url: '/dashboard/default'
+                            url: '/games/results'
                         },
                         {
                             id: 'default',
                             title: 'Reports',
                             type: 'item',
-                            url: '/dashboard/default'
+                            url: '/games/reports'
                         },
                     ]
                 },
@@ -227,7 +204,7 @@ const chartData = {
                     id: 'account-page',
                     title: 'Accounts',
                     type: 'collapse',
-                    url: '/account-settings',
+                    // url: '/account-settings',
                     classes: 'nav-item',
                     icon: 'feather icon-sidebar',
                     children: [
@@ -235,49 +212,49 @@ const chartData = {
                             id: 'default',
                             title: 'Create Agent',
                             type: 'item',
-                            url: '/dashboard/default'
+                            url: '/account/create-agent'
                         },
                         {
                             id: 'sales',
                             title: 'Allocate Credit Limit',
                             type: 'item',
-                            url: '/dashboard/default'
+                            url: '/account/allocate-credit-limit'
                         },
                         {
                             id: 'default',
                             title: 'Manage Agents',
                             type: 'item',
-                            url: '/dashboard/default'
+                            url: '/account/manage-agents'
                         },
                         {
                             id: 'default',
                             title: 'Create POS',
                             type: 'item',
-                            url: '/dashboard/default'
+                            url: '/account/create-pos'
                         },
                         {
                             id: 'default',
                             title: 'View POS',
                             type: 'item',
-                            url: '/dashboard/default'
+                            url: '/account/view-pos'
                         },
                         {
                             id: 'default',
                             title: 'Remove POS',
                             type: 'item',
-                            url: '/dashboard/default'
+                            url: '/account/remove-pos'
                         },
                         {
                             id: 'default',
                             title: 'Block POS',
                             type: 'item',
-                            url: '/dashboard/default'
+                            url: '/account/block-pos'
                         },
                         {
                             id: 'default',
                             title: 'Unblock POS',
                             type: 'item',
-                            url: '/dashboard/default'
+                            url: '/account/unblock-pos'
                         }
                     ]
                 },
@@ -285,7 +262,7 @@ const chartData = {
                     id: 'payments-page',
                     title: 'Payments',
                     type: 'collapse',
-                    url: '/payments',
+                    // url: '/payments',
                     classes: 'nav-item',
                     icon: 'feather icon-sidebar',
                     children: [
@@ -293,19 +270,19 @@ const chartData = {
                             id: 'default',
                             title: 'Credit POS',
                             type: 'item',
-                            url: '/dashboard/default'
+                            url: '/payments/credit-pos'
                         },
                         {
                             id: 'sales',
                             title: 'Increase Cashier Credit Limit',
                             type: 'item',
-                            url: '/dashboard/default'
+                            url: '/payments/increase-cashier-credit'
                         },
                         {
                             id: 'default',
                             title: 'Reduce Cashier Credit Limit',
                             type: 'item',
-                            url: '/dashboard/default'
+                            url: '/payments/reduce-cashier-credit'
                         }
                     ]
                 },
@@ -313,7 +290,7 @@ const chartData = {
                     id: 'reports-page',
                     title: 'Reports',
                     type: 'collapse',
-                    url: '/report/listings',
+                    // url: '/report/listings',
                     classes: 'nav-item',
                     icon: 'feather icon-sidebar',
                     children: [
@@ -321,31 +298,31 @@ const chartData = {
                             id: 'default',
                             title: 'Winnings',
                             type: 'item',
-                            url: '/dashboard/default'
+                            url: '/reports/winnings'
                         },
                         {
                             id: 'sales',
                             title: 'Tickets',
                             type: 'item',
-                            url: '/dashboard/default'
+                            url: '/reports/tickets'
                         },
                         {
                             id: 'default',
                             title: 'Credits',
                             type: 'item',
-                            url: '/dashboard/default'
+                            url: '/reports/credits'
                         },
                         {
                             id: 'sales',
                             title: 'Debts',
                             type: 'item',
-                            url: '/dashboard/default'
+                            url: '/reports/debts'
                         },
                         {
                             id: 'sales',
                             title: 'Agents Performance',
                             type: 'item',
-                            url: '/dashboard/default'
+                            url: '/reports/agents-performance'
                         }
                     ]
                 },
@@ -353,7 +330,7 @@ const chartData = {
                     id: 'supplies-page',
                     title: 'Supplies',
                     type: 'collapse',
-                    url: '/supplies',
+                    // url: '/supplies',
                     classes: 'nav-item',
                     icon: 'feather icon-sidebar',
                     children: [
@@ -375,7 +352,7 @@ const chartData = {
                     id: 'messaging-page',
                     title: 'Messaging',
                     type: 'collapse',
-                    url: '/messages',
+                    // url: '/messages',
                     classes: 'nav-item',
                     icon: 'feather icon-sidebar',
                     children: [
@@ -422,53 +399,7 @@ const chartData = {
                 //     ]
                 // },
             ]
-        },
-        {
-            id: 'admin-panel',
-            title: 'Admin Panel',
-            type: 'group',
-            icon: 'icon-monitor',
-            children: [
-                {
-                    id: 'helpdesk',
-                    title: 'Helpdesk',
-                    type: 'collapse',
-                    icon: 'feather icon-help-circle',
-                    children: [
-                        {
-                            id: 'hd-dashboard',
-                            title: 'Helpdesk Dashboard',
-                            type: 'item',
-                            url: '/helpdesk/hd-dashboard'
-                        },
-                        {
-                            id: 'hd-ticket',
-                            title: 'Create Ticket',
-                            type: 'item',
-                            url: '/helpdesk/hd-ticket'
-                        },
-                        {
-                            id: 'hd-ticket-list',
-                            title: 'Ticket List',
-                            type: 'item',
-                            url: '/helpdesk/hd-ticket-list'
-                        },
-                        {
-                            id: 'hd-ticket-details',
-                            title: 'Ticket Detail',
-                            type: 'item',
-                            url: '/helpdesk/hd-ticket-details'
-                        },
-                        {
-                            id: 'hd-customer-list',
-                            title: 'Customer',
-                            type: 'item',
-                            url: '/helpdesk/hd-customer-list'
-                        }
-                    ]
-                }
-            ]
-        },
+        }
     ]
 }
 

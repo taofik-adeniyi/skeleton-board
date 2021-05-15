@@ -80,7 +80,6 @@ const NavContent = (props) => {
                     <ul id="sidenav-horizontal" className="nav pcoded-inner-navbar sidenav-inner" onMouseLeave={onNavContentLeave} style={scrollStyle}>
                         {navItems}
                     </ul>
-                    okay
                 </div>
                 <a href={DEMO.BLANK_LINK} className={nextClass.join(' ')} onClick={scrollNextHandler}>
                     <span />
